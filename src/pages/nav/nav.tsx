@@ -7,7 +7,7 @@ function Navbar() {
                 <div className="container flex justify-between text-lg">
                     Blog Pessoal
 
-                    <div className='flex gap-4'>
+                    <div className='flex gap-6'>
                         Postagens
                         Temas
                         Cadastrar tema
