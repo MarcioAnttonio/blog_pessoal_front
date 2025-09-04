@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import type { Tema } from "../../../models/Tema";
 import { buscar } from "../../../services/Service";
-import CardTema from "../cardtema/CardTema";
 import { AuthContext } from "../../../contexts/AuthContext";
-
+import CardTema from "../cardtema/CardTema";
 function ListaTemas() {
 
     const navigate = useNavigate();

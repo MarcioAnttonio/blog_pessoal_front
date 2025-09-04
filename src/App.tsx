@@ -6,8 +6,8 @@ import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import DeletarTema from './components/tema/deletartema/DeletarTema'
 import FormTema from './components/tema/formtema/FormTema'
-import ListaTemas from './components/tema/listatemas/ListaTemas'
 import { AuthProvider } from './contexts/AuthContext'
+import ListaTemas from './components/tema/listatemas/ListaTemas'
 
 function App() {
 	return (
