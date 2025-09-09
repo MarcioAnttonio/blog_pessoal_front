@@ -12,7 +12,7 @@ function Home() {
                         <h2 className='text-5xl font-bold'>
                             Seja Bem Vinde!
                         </h2>
-                        <p className='text-xl'>
+                        <p className='text-2xl'>
                             Expresse aqui seus pensamentos e opniões
                         </p>
 
