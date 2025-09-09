@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 
 function Footer() {
-  let data = new Date().getFullYear()
+  const data = new Date().getFullYear()
 
   const { usuario } = useContext(AuthContext)
 
