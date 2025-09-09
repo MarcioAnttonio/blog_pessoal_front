@@ -2,8 +2,8 @@ import { useContext, useEffect, useState, type ChangeEvent, type FormEvent } fro
 import { useNavigate, useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { AuthContext } from "../../../contexts/AuthContext";
-import type Postagem from "../../../models/Postagem";
-import type Tema from "../../../models/Tema";
+import type { Postagem } from "../../../models/Postagem";
+import type { Tema } from "../../../models/Tema";
 import { atualizar, buscar, cadastrar } from "../../../services/Service";
 
 function FormPostagem() {
@@ -64,7 +64,7 @@ function FormPostagem() {
             alert('Você precisa estar logado');
             navigate('/');
         }
-    }, [token])
+    }, [navigate, token])
 
     useEffect(() => {
         buscarTemas()
@@ -72,7 +72,7 @@ function FormPostagem() {
         if (id !== undefined) {
             buscarPostagemPorId(id)
         }
-    }, [id])
+    }, [buscarPostagemPorId, buscarTemas, id])
 
     useEffect(() => {
         setPostagem({

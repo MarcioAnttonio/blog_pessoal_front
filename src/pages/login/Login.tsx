@@ -2,7 +2,7 @@ import { useContext, useEffect, useState, type ChangeEvent, type FormEvent } fro
 import { Link, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { AuthContext } from "../../contexts/AuthContext";
-import type UsuarioLogin from "../../models/UsuarioLogin";
+import type { UsuarioLogin } from "../../models/UsuarioLogin";
 
 function Login() {
 

@@ -1,7 +1,7 @@
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
-import type Usuario from "../../models/Usuario";
+import type { Usuario } from "../../models/Usuario";
 import { cadastrarUsuario } from "../../services/Service";
 
 function Cadastro() {
@@ -24,6 +24,7 @@ function Cadastro() {
     if (usuario.id !== 0){
       retornar()
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [usuario])
 
   function retornar(){

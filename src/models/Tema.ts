@@ -1,6 +1,6 @@
-import type Postagem from "./Postagem";
+import type { Postagem } from "./Postagem";
 
-export default interface Tema {
+export interface Tema {
     id: number;
     descricao: string;
     postagem?: Postagem[] | null;
