@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { AuthContext } from "../../../contexts/AuthContext"
 import { ClipLoader } from "react-spinners";
-import type { Tema } from "../../../models/Tema";
+import { type Tema } from "../../../models/Tema";
 import { buscar, deletar } from "../../../services/Service";
 
 

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { atualizar, buscar, cadastrar } from "../../../services/Service";
 import { AuthContext } from "../../../contexts/AuthContext";
-import type { Tema } from "../../../models/Tema";
+import { type Tema } from "../../../models/Tema";
 
 function FormTema() {
 

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
-import type { Tema } from "../../../models/Tema";
+import { type Tema } from "../../../models/Tema";
 import { buscar } from "../../../services/Service";
 import { AuthContext } from "../../../contexts/AuthContext";
 import CardTema from "../cardtema/CardTema";
