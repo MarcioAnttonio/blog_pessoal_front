@@ -13,7 +13,7 @@ import DeletarPostagem from './components/postagem/deletarpostagem/DeletarPostag
 import Perfil from './pages/perfil/Perfil'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Home from './pages/home/Home'	
+import Home from './pages/home/Home.tsx'	
 
 
 function App() {
