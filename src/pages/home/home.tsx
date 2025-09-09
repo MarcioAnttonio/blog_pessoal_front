@@ -2,6 +2,7 @@ import ListaPostagens from "../../components/postagem/listapostagens/ListaPostag
 import ModalPostagem from "../../components/postagem/modalpostagem/ModalPostagem"
 
 
+
 function Home() {
     return (
         <>
