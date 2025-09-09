@@ -1,6 +1,6 @@
-import { Postagem } from "./Postagem";
+import type Postagem from "./Postagem";
 
-export interface Usuario {
+export default interface Usuario {
   id: number;
   nome: string;
   usuario: string;
