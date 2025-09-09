@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState, type ChangeEvent, type FormEvent } from "react";
+import { useContext, useEffect, useState, useCallback, type ChangeEvent, type FormEvent } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { AuthContext } from "../../../contexts/AuthContext";
@@ -23,7 +23,7 @@ function FormPostagem() {
 
     const { id } = useParams<{ id: string }>()
 
-    async function buscarPostagemPorId(id: string) {
+    const buscarPostagemPorId = useCallback(async (id: string) => {
         try {
             await buscar(`/postagens/${id}`, setPostagem, {
                 headers: { Authorization: token }
@@ -33,7 +33,7 @@ function FormPostagem() {
                 handleLogout()
             }
         }
-    }
+    }, [token, handleLogout]);
 
     async function buscarTemaPorId(id: string) {
         try {
@@ -47,7 +47,7 @@ function FormPostagem() {
         }
     }
 
-    async function buscarTemas() {
+    const buscarTemas = useCallback(async () => {
         try {
             await buscar('/temas', setTemas, {
                 headers: { Authorization: token }
@@ -57,7 +57,7 @@ function FormPostagem() {
                 handleLogout()
             }
         }
-    }
+    }, [token, handleLogout]);
 
     useEffect(() => {
         if (token === '') {
